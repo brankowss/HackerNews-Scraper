@@ -13,37 +13,38 @@ pip install scrapy
 To use this code from start to end, follow these steps:
 
 Clone this repository to your local machine using the following command:
-
+```
 git clone https://github.com/brankowss/HackerNews-Scraper
 cd web-scraping-project
-
+```
 Install virtualenv to create a virtual environment for your project. 
 If you don't have virtualenv installed, you can install it using pip:
-
+```
 pip install virtualenv
-
+```
 Create a virtual environment for your project using the following command:
-
+```
 virtualenv venv
-
+```
 Activate the Virtual Environment:
 
 On Windows, use the following command:
-
+```
 venv\Scripts\activate
-
+```
 On Unix or MacOS, use:
-
+```
 source venv/bin/activate
-
+```
 Install the required dependencies for the project using the requirements.txt file:
-
+```
 pip install -r requirements.txt
-
+```
 This will install Scrapy, BeautifulSoup4 for cleaning, MySQL connector, and other required packages.
 
 ## Project Structure
 
+```
 .
 ├── README.md
 ├── requirements.txt
@@ -58,25 +59,29 @@ This will install Scrapy, BeautifulSoup4 for cleaning, MySQL connector, and othe
         ├── __init__.py
         ├── spider1.py
         └── spider2.py
-
+```
 ## Items
 
-**Spider1**
-Field Name	Description
-title_topic	The title of the topic.
-url_of_topic	The URL of the topic.
-time_posted	The time the topic was posted.
-user	The user who posted the topic.
-comments_count	The number of comments on the topic.
+### Spider1 Fields
 
-**Spider2**
-Field Name	Description
-title_topic	The title of the topic.
-url_of_topic	The URL of the topic.
-time_posted	The time the comment was posted.
-user	The user who posted the comment.
-comment	The comment text.
-page_url	The URL of the page where the comment was found.
+| Field Name    | Description                                   |
+|---------------|-----------------------------------------------|
+| title_topic   | The title of the topic.                      |
+| url_of_topic  | The URL of the topic.                        |
+| time_posted   | The time when the topic was posted.          |
+| user          | The user who posted the topic.               |
+| comments_count| The number of comments on the topic.         |
+
+### Spider2 Fields
+
+| Field Name    | Description                                   |
+|---------------|-----------------------------------------------|
+| title_topic   | The title of the topic.                      |
+| url_of_topic  | The URL of the topic.                        |
+| time_posted   | The time the comment was posted.         |
+| user          | The user who posted the comment.               |
+| comment       | The comment text.                   |
+| page_url      | The URL of the page containing the comments.  |
 
 ## Pipeline
 
@@ -101,7 +106,7 @@ scrapy crawl spider2
 - Total Responses Received: 20
 - Elapsed Time: 63.81 seconds
 
-***Spider2**
+**Spider2**
 - Number of Items Scraped: 18457
 - Total Requests Made: 555
 - Total Responses Received: 555
