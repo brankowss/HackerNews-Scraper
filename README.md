@@ -7,9 +7,9 @@ This is is simple scraper that uses Scrapy, a powerful web scraping framework in
 ## Setup Instructions
 
 To run this project, you'll need to have Python and Scrapy installed on your system. You can install Python from [python.org](https://www.python.org/downloads/) and Scrapy using pip:
-
+```
 pip install scrapy
-
+```
 To use this code from start to end, follow these steps:
 
 Clone this repository to your local machine using the following command:
