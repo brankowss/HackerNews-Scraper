@@ -91,13 +91,13 @@ Once an item has been populated with data by the spider, it is passed to the pip
 ## Spider
 
 Run Spider1 to scrape the main page and save data to MySQL database:
-
+```
 scrapy crawl spider1
-
+```
 Run Spider2 to scrape comments from all articles and save data to MySQL database:
-
+```
 scrapy crawl spider2
-
+```
 ## Scrapy Statistics
 
 **Spider1**
