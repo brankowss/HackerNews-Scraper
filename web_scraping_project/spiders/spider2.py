@@ -36,17 +36,17 @@ class Spider2Spider(scrapy.Spider):
             item['time_posted'] = t.xpath('.//span[@class="age"]/@title').get()
             item['page_url'] = t.xpath('.//span[@class="age"]/a/@href').get()
             
-            # Initialize a list to store comment texts
+            # List to store comment texts
             comment_texts = []
 
-            # Define a list of possible class names for comment elements
+            # List of possible class names for comment elements
             comment_class_names = ['commtext c00', 'commtext c88', 'commtext c5a', 'commtext c55', 'commtext cce', 'commtext c73', 'commtext c9c', 
                                    'commtext cae', 'commtext cbe', 'commtext cdd']
 
-            # Initialize a set to store unique comment texts
+            # Set to store unique comment texts
             comment_texts = set()
 
-            # Define a list of possible class names for comment elements
+            # List of possible class names for comment elements
             comment_class_names = ['commtext c00', 'commtext c88', 'commtext c5a', 'commtext c55', 'commtext cce', 'commtext c73', 'commtext c9c', 
                                 'commtext cae', 'commtext cbe', 'commtext cdd']
 
