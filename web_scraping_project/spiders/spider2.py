@@ -46,10 +46,6 @@ class Spider2Spider(scrapy.Spider):
             # Set to store unique comment texts
             comment_texts = set()
 
-            # List of possible class names for comment elements
-            comment_class_names = ['commtext c00', 'commtext c88', 'commtext c5a', 'commtext c55', 'commtext cce', 'commtext c73', 'commtext c9c', 
-                                'commtext cae', 'commtext cbe', 'commtext cdd']
-
             # Loop through each possible class name
             for class_name in comment_class_names:
                 # Fetch text directly from the <span> element with the current class name
