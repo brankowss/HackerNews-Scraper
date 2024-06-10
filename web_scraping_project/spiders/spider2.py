@@ -1,5 +1,5 @@
 import scrapy
-from web_scraping_project.items import  Spider2Item
+from web_scraping_project.items import Spider2Item
 
 class Spider2Spider(scrapy.Spider):
     name = "spider2"
